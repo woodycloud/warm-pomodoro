@@ -1,0 +1,6 @@
+{
+  "name": "番茄钟",
+  "description": "一个现代、美观、带动画效果并支持自定义时长和记录专注统计的番茄工作法时钟应用。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
