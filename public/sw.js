@@ -1,8 +1,8 @@
 const CACHE_NAME = 'warm-pomodoro-v1.2';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.json',
+  './',
+  './index.html',
+  './manifest.json',
   'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap'
 ];
 
@@ -64,7 +64,7 @@ self.addEventListener('fetch', (event) => {
       }).catch(() => {
         // Fallback for offline offline
         if (event.request.mode === 'navigate') {
-          return caches.match('/index.html');
+          return caches.match('./index.html');
         }
       });
     })
